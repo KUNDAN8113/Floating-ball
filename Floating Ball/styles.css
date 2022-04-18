@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#heading {
+  text-align: center;
+  
+}
+#kb {
+  text-align: center;
+  color:brown;
+}
+
+#scr {
+  text-align: center;
+  
+}
+
+#nm {
+  text-align: center;
+  color:blueviolet;
+}
+body{
+  background-color: aqua;
+  background-image: url("back3.png");
+}
+#jumping {
+  width: 1200px;
+  height: 500px;
+  border: 1px solid brown;
+  margin: auto;
+  overflow: hidden;
+  padding-left: 10px;
+  background-color: blueviolet;
+  background-image: url("back1.png");
+}
+
+#block {
+  width: 50px;
+  height: 500px;
+  background-color:green;
+  position: relative;
+  left: 1200px;
+  animation: block 2s infinite linear;
+ 
+}
+
+@keyframes block {
+  0% {
+    left: 1200px
+  }
+
+  100% {
+    left: -50px
+  }
+}
+
+#hole{
+  width: 50px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  left: 1200px;
+  top: -500px;
+  animation: block 2s infinite linear;
+  background-image: url("back1.png");
+ 
+  
+}
+
+
+#ball{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 100px;
+  border-radius: 50%;
+  padding-left: 10px;
+
+}
